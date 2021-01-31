@@ -35,15 +35,13 @@ function setup(){
     log5 = new Log(870,120,150, -PI/7);
 
     bird = new Bird(100,100);
+    box6 = new Box(600,200,50,50)
 
 }
 
 function draw(){
     background(backgroundImg);
     Engine.update(engine);
-    console.log(box2.body.position.x);
-    console.log(box2.body.position.y);
-    console.log(box2.body.angle);
     box1.display();
     box2.display();
     ground.display();
@@ -58,6 +56,7 @@ function draw(){
     box5.display();
     log4.display();
     log5.display();
+    box6.display();
 
     bird.display();
     platform.display();
